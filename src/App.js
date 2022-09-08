@@ -6,7 +6,7 @@ import Weather from './weatherApp';
 function App() {
     return(
     <div>
-        <h1>APP HERE</h1>
+        <h1>Welcome!</h1>
         <Nav />
         <Weather />
     </div>
@@ -14,17 +14,3 @@ function App() {
 }
 
 export default App;
-//function App() {
-//  return (
-//    <div className="App">
-//      <header className="App-header">
-//      <h1>Weather App!</h1>
-//        <a>
-//          Learn React
-//        </a>
-//      </header>
-//    </div>
-//  );
-//}
-//
-//export default App;
