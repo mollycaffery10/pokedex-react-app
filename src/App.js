@@ -1,7 +1,7 @@
 import './App.css';
 import {Link} from "react-router-dom";
 import Nav from './nav';
-import Weather from './weatherApp';
+import Weather from './WeatherApp';
 
 function App() {
     return(
