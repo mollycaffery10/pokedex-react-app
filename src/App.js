@@ -6,7 +6,7 @@ import Weather from './weatherApp';
 function App() {
     return(
     <div>
-        <h1>Welcome!</h1>
+        <h1>Here is the Weather</h1>
         <Nav />
         <Weather />
     </div>
