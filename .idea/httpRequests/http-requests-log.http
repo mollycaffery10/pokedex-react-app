@@ -1,0 +1,42 @@
+GET https://api.weather.gov/products/locations
+Accept: application/geo+json
+
+<> 2022-09-16T164210.200.json
+
+###
+
+GET https://api.weather.gov/zones
+Accept: application/geo+json
+
+<> 2022-09-16T164110.500.json
+
+###
+
+GET https://api.weather.gov/zones
+Accept: application/geo+json
+
+<> 2022-09-10T124206.500.json
+
+###
+
+GET https://api.weather.gov/zones
+Accept: application/json
+
+<> 2022-09-10T124106.500.json
+
+###
+
+GET https://api.weather.gov/zones
+
+accept: application/geo+json
+
+<> 2022-09-10T124038.403.html
+
+###
+
+GET https://api.weather.gov/zones
+
+<> 2022-09-10T123935.500.json
+
+###
+
