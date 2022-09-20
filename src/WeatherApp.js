@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 
-const Weather = (props) => {
+const WeatherLocations = (props) => {
   const [zones, setZones] = useState([])
 
   const fetchData = async () => {
@@ -18,7 +18,10 @@ const Weather = (props) => {
       {zones.length > 0 && (
         <ul>
           {zones.map(user => (
-            <li key={zones.id}>{zones.name}</li>
+            <li>
+                 <h3>key={zones.id}</h3>
+                 <p>{zones.name}</p>
+            </li>
           ))}
         </ul>
       )}
@@ -26,9 +29,9 @@ const Weather = (props) => {
   )
 };
 
-Weather.propTypes = {
-    data: 'object'
-};
+// Weather.propTypes = {
+//     data: 'object'
+// };
 
-export default Weather
+export default WeatherLocations
 
