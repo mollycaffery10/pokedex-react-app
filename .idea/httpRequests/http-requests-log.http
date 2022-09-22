@@ -1,3 +1,24 @@
+GET https://pokeapi.co/api/v2/pokedex/kanto/
+Accept: application/geo+json
+
+<> 2022-09-21T220043.200.json
+
+###
+
+GET https://pokeapi.co/api/v2/pokedex/kanto/
+Accept: application/geo+json
+
+<> 2022-09-21T220025.200.json
+
+###
+
+GET https://pokeapi.co/api/v2/pokedex/2/
+Accept: application/geo+json
+
+<> 2022-09-21T215949.200.json
+
+###
+
 GET https://api.weather.gov/products/locations
 Accept: application/geo+json
 

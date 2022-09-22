@@ -1,14 +1,14 @@
 import './App.css';
 import {Link} from "react-router-dom";
 import Nav from './nav';
-import Weather from './WeatherApp';
+import PokedexInfo from './PokedexData';
 
 function App() {
     return(
     <div>
-        <h1>Here is the Weather:</h1>
         <Nav />
-        <Weather  />
+        <h1>Search Pokedex by ID:</h1>
+        <PokedexInfo  />
     </div>
     );
 }

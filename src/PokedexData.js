@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react"
 
-const WeatherLocations = (props) => {
-  const [zones, setZones] = useState([])
+const PokedexMeta = (props) => {
+  const [names, setNames] = useState([])
 
   const fetchData = async () => {
-    const response = await fetch("https://api.weather.gov/products/locations")
+    const response = await fetch("https://pokeapi.co/api/v2/pokedex/kanto/")
     const data = await response.json()
-    setZones(data)
+    setNames(data)
+    console.log(data)
   }
 
   useEffect(() => {
@@ -15,12 +16,12 @@ const WeatherLocations = (props) => {
 
   return (
     <div>
-      {zones.length > 0 && (
+      {names.length > 0 && (
         <ul>
-          {zones.map(user => (
+          {names.map(user => (
             <li>
-                 <h3>key={zones.id}</h3>
-                 <p>{zones.name}</p>
+                 <h3>key={names.id}</h3>
+                 <p>{names.name}</p>
             </li>
           ))}
         </ul>
@@ -33,5 +34,5 @@ const WeatherLocations = (props) => {
 //     data: 'object'
 // };
 
-export default WeatherLocations
+export default PokedexMeta
 
