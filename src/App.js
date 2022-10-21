@@ -7,7 +7,14 @@ function App() {
     return(
     <div>
         <Nav />
-        <h1>Search Pokedex by ID:</h1>
+        <h1>Search the PokeDex!</h1>
+        <form>
+            <label>
+                Enter an ID:
+                <input type="text" name="name" />
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
         <PokedexInfo  />
     </div>
     );
