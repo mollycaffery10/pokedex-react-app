@@ -20,6 +20,7 @@ const PokedexMeta = (props) => {
         <ul>
           {names.map(user => (
             <li>
+                console.log(names);
                  <h3>key={names.id}</h3>
                  <p>{names.name}</p>
             </li>
