@@ -13,7 +13,7 @@ function App() {
                 Enter an ID:
                 <input type="text" name="name" />
             </label>
-            <input type="submit" value="Submit" />
+            <input className={"getResults"} type="submit" value="Get Results" />
         </form>
         <PokedexInfo  />
     </div>

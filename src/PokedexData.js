@@ -22,7 +22,7 @@ const PokedexMeta = (props) => {
             <li>
                 console.log(names);
                  <h3>key={names.id}</h3>
-                 <p>{names.name}</p>
+                 <p>{names.names}</p>
             </li>
           ))}
         </ul>
@@ -30,10 +30,6 @@ const PokedexMeta = (props) => {
     </div>
   )
 };
-
-// Weather.propTypes = {
-//     data: 'object'
-// };
 
 export default PokedexMeta
 
