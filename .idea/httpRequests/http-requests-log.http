@@ -1,6 +1,20 @@
 GET https://pokeapi.co/api/v2/pokedex/kanto/
 Accept: application/geo+json
 
+<> 2022-11-22T095416.200.json
+
+###
+
+GET https://jsonplaceholder.typicode.com/users
+Accept: application/geo+json
+
+<> 2022-11-22T095332.200.json
+
+###
+
+GET https://pokeapi.co/api/v2/pokedex/kanto/
+Accept: application/geo+json
+
 <> 2022-09-21T220043.200.json
 
 ###

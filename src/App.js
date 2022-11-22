@@ -10,10 +10,10 @@ function App() {
         <h1>Search the PokeDex!</h1>
         <form>
             <label>
-                Enter an ID:
-                <input type="text" name="name" />
+                Enter a Pokemon Name:
+                <input type="text" name="textInput" placeholder="Bulbasaur"/>
             </label>
-            <input className={"getResults"} type="submit" value="Get Results" />
+            <input className={"getResults"} type="submit" value="Get Results"/>
         </form>
         <PokedexInfo  />
     </div>
