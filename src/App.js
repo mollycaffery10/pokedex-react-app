@@ -10,7 +10,7 @@ function App() {
         <h1>Search the PokeDex!</h1>
         <form>
             <label>
-                Enter a Pokemon Name:
+                Enter Pokemon Name:
                 <input type="text" name="textInput" placeholder="Bulbasaur"/>
             </label>
             <input className={"getResults"} type="submit" value="Get Results"/>

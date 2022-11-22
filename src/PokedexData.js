@@ -1,64 +1,42 @@
-import React, { useEffect, useState } from "react";
+import React, { useState} from "react";
+import PokemonList from './PokemonList'
 
-function PokedexApp() {
-  const [user, setUser] = useState([]);
+function App() {
+    const [pokemon, setPokemon] = useState(["bulbasaur", "charmander"])
 
-  const fetchData = () => {
-    return fetch("https://pokeapi.co/api/v2/pokedex/kanto/")
-        .then((response) => response.json())
-        .then((data) => setUser(data));
-  }
-
-  useEffect(() => {
-    fetchData();
-  },[])
-
-  return (
-      <main>
-        <h1>Pokedex Results:</h1>
-        <ul>
-          {user && user.length > 0 && user.map((userObj, index) => (
-              <li key={userObj.descriptions}>{userObj.descriptions.name}</li>
-          ))}
-        </ul>
-      </main>
-  );
+    return (
+        <PokemonList pokemon={pokemon} />
+    )
 }
 
-export default PokedexApp;
-
-// import React, { useEffect, useState } from "react"
+export default App;
+// import React, { useEffect, useState } from "react";
 //
-// const PokedexMeta = (props) => {
-//   const [names, setNames] = useState([])
+// function PokedexApp() {
+//     const [pokemon, setPokemon] = useState("pikachu");
+//     const [pokemonData, setPokemonData] = useState([]);
+//     const [pokemonType, setPokemonType] = useState("");
 //
-//   const fetchData = async () => {
-//     const response = await fetch("https://pokeapi.co/api/v2/pokedex/kanto/")
-//     const data = await response.json()
-//     setNames(data)
-//     console.log(data)
+//   const fetchData = () => {
+//     return fetch("https://pokeapi.co/api/v2/pokemon/${pokemon}")
+//         .then((response) => response.json())
+//         .then((data) => setPokemonData(data));
 //   }
 //
 //   useEffect(() => {
-//     fetchData()
-//   }, []);
+//     fetchData();
+//   },[])
 //
 //   return (
-//     <div>
-//       {names.length > 0 && (
+//       <main>
+//         <h1>Pokedex Results:</h1>
 //         <ul>
-//           {names.map(user => (
-//             <li>
-//                 console.log(names);
-//                  <h3>key={names.id}</h3>
-//                  <p>{names.names}</p>
-//             </li>
-//           ))}
+//           {/*{pokemon && pokemon.length > 0 && pokemon.map((data, index) => (*/}
+//           {/*    <li key={data.sprites}>{data.name}</li>*/}
+//           {/*))}*/}
 //         </ul>
-//       )}
-//     </div>
-//   )
-// };
+//       </main>
+//   );
+// }
 //
-// export default PokedexMeta
-//
+// export default PokedexApp;
