@@ -7,14 +7,14 @@ function App() {
     return(
     <div>
         <Nav />
-        <h1>Search the PokeDex!</h1>
-        <form>
-            <label>
-                Enter Pokemon Name:
-                <input type="text" name="textInput" placeholder="Bulbasaur"/>
-            </label>
-            <input className={"getResults"} type="submit" value="Get Results"/>
-        </form>
+        <h1>Search the PokeDex:</h1>
+        {/*<form>*/}
+        {/*    <label>*/}
+        {/*        Enter Pokemon Name:*/}
+        {/*        <input type="text" name="textInput" placeholder="Bulbasaur"/>*/}
+        {/*    </label>*/}
+        {/*    <input className={"getResults"} type="submit" value="Get Results"/>*/}
+        {/*</form>*/}
         <PokedexInfo  />
     </div>
     );

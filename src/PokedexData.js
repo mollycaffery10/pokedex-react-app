@@ -1,22 +1,60 @@
-import React, { useState, useEffect } from "react";
-import PokemonList from './PokemonList'
+import React, { useState } from "react";
+import "./App.css";
 import axios from "axios";
 
-function App() {
-    const [pokemon, setPokemon] = useState([])
-    const [currentPageUrl, setCurrentPageUrl] = useState("https://pokeapi.co/api/v2/pokemon/")
+const App = () => {
+    const [pokeData, setPokeData] = useState([]);
+    const [pokeType, setPokeType] = useState("");
+    const [pokemon, setPokemon] = useState("pikachu");
 
-    //Everytime we change current page URL then we re-run the code inside of here.
-    useEffect(() => {
-        axios.get(currentPageUrl).then(res => {
-            setPokemon(res.data.results.map(p => p.name))
-        })
-        }, [currentPageUrl])
+    var handleChange = (e) => {
+        setPokemon(e.target.value.toLowerCase());
+    };
+    var handleSubmit = (e) => {
+        e.preventDefault();
+        getPokemon();
+    };
+    const getPokemon = async () => {
+        const toArray = [];
+        try {
+            const pokeAPIUrl = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+            const res = await axios.get(pokeAPIUrl);
+            toArray.push(res.data);
+            setPokeType(res.data.types[0].type.name);
+            setPokeData(toArray);
+        } catch (e) {
+            console.log(e);
+        }
+    };
 
     return (
-        <PokemonList pokemon={pokemon} />
-    )
-}
+        <div className="mainContent">
+            <form onSubmit={handleSubmit}>
+                <label>
+                    <input
+                        type="text"
+                        className="getTextInput"
+                        onChange={handleChange}
+                        placeholder="Bulbasaur"
+                    />
+                    <input
+                        className="getResults"
+                        type="submit"
+                        value="Get Results"
+                    />
+                </label>
+            </form>
+            {pokeData.map((data) => {
+                return (
+                    <div className="container">
+                       <h5>Type:</h5>
+                        <div className="divTableCell">{pokeType}</div>
+                    </div>
+                );
+            })}
+        </div>
+    );
+};
 
 export default App;
 
@@ -25,13 +63,13 @@ export default App;
 //
 // function PokedexApp() {
 //     const [pokemon, setPokemon] = useState("pikachu");
-//     const [pokemonData, setPokemonData] = useState([]);
-//     const [pokemonType, setPokemonType] = useState("");
+//     const [pokeData, setPokeData] = useState([]);
+//     const [pokeType, setPokeType] = useState("");
 //
 //   const fetchData = () => {
 //     return fetch("https://pokeapi.co/api/v2/pokemon/${pokemon}")
 //         .then((response) => response.json())
-//         .then((data) => setPokemonData(data));
+//         .then((data) => setPokeData(data));
 //   }
 //
 //   useEffect(() => {

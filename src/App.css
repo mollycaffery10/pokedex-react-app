@@ -32,6 +32,18 @@ h3 {
     width: 70%;
 }
 
+.textInput{
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+}
+
+.getResults{
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
 .pokeballImage {
     height: 150px;
     width: 150px;

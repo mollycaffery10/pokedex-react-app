@@ -1,3 +1,10 @@
+GET https://pokeapi.co/api/v2/pokemon/
+Accept: application/geo+json
+
+<> 2022-11-22T161245.200.json
+
+###
+
 GET https://pokeapi.co/api/v2/pokemon/bulbasaur
 Accept: application/geo+json
 
