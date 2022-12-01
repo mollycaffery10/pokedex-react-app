@@ -1,3 +1,10 @@
+GET https://pokeapi.co/api/v2/pokemon/20/
+Accept: application/geo+json
+
+<> 2022-12-01T111140.200.json
+
+###
+
 GET https://pokeapi.co/api/v2/pokemon/
 Accept: application/geo+json
 

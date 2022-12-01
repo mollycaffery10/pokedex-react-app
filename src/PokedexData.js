@@ -49,6 +49,8 @@ const App = () => {
                     <div className="container">
                        <h5>Type:</h5>
                         <div className="divTableCell">{pokeType}</div>
+                        <h5>Height and Weight:</h5>
+                        <div className="divTableCell">{(data.height * 3.9) + " FT " + (data.weight / 4.3) + " LB"}</div>
                     </div>
                 );
             })}
