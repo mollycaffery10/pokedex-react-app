@@ -59,35 +59,3 @@ const App = () => {
 };
 
 export default App;
-
-//TO DO: This method commented out below is
-// import React, { useEffect, useState } from "react";
-//
-// function PokedexApp() {
-//     const [pokemon, setPokemon] = useState("pikachu");
-//     const [pokeData, setPokeData] = useState([]);
-//     const [pokeType, setPokeType] = useState("");
-//
-//   const fetchData = () => {
-//     return fetch("https://pokeapi.co/api/v2/pokemon/${pokemon}")
-//         .then((response) => response.json())
-//         .then((data) => setPokeData(data));
-//   }
-//
-//   useEffect(() => {
-//     fetchData();
-//   },[])
-//
-//   return (
-//       <main>
-//         <h1>Pokedex Results:</h1>
-//         <ul>
-//           {/*{pokemon && pokemon.length > 0 && pokemon.map((data, index) => (*/}
-//           {/*    <li key={data.sprites}>{data.name}</li>*/}
-//           {/*))}*/}
-//         </ul>
-//       </main>
-//   );
-// }
-//
-// export default PokedexApp;
