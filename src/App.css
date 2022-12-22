@@ -58,3 +58,13 @@ h3 {
     text-decoration: none;
     margin: 4px 2px;
 }
+
+.outputContainer
+{
+    background-color: lightgray;
+    border: gray;
+    border-radius: 15px;
+    height: 150px;
+    width: 250px;
+    text-align: center;
+}

@@ -46,9 +46,9 @@ const App = () => {
             </form>
             {pokeData.map((data) => {
                 return (
-                    <div className="container">
+                    <div className="outputContainer">
                        <h5>Type:</h5>
-                        <div className="divTableCell">{pokeType}</div>
+                        <div className="divTableCell">{pokeType.toUpperCase()}</div>
                         <h5>Height and Weight:</h5>
                         <div className="divTableCell">{(data.height * 3.9) + " FT " + (data.weight / 4.3) + " LB"}</div>
                     </div>
