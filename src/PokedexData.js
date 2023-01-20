@@ -50,7 +50,7 @@ const App = () => {
                        <h5>Type:</h5>
                         <div className="divTableCell">{pokeType.toUpperCase()}</div>
                         <h5>Height and Weight:</h5>
-                        <div className="divTableCell">{(data.height * 3.9) + " FT " + (data.weight / 4.3) + " LB"}</div>
+                        <div className="divTableCell">{(data.height * 3.9) + " FT " + (Math.round((data.weight / 4.3) * 100) / 100) + " LB"}</div>
                     </div>
                 );
             })}

@@ -63,8 +63,9 @@ h3 {
 .outputContainer
 {
     background-color: lightgray;
-    border: gray;
+    border: #a9a4a4;
     border-radius: 15px;
+    padding: 3px;
     height: 150px;
     width: 250px;
     text-align: center;
