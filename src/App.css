@@ -39,7 +39,7 @@ h3 {
 }
 
 .getResults{
-    align-items: center;
+    align-items: flex-end;
     display: flex;
     font-size: 20px;
     font-family: Consolas;
